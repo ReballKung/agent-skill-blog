@@ -3,8 +3,6 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { TableOfContents } from "@/components/TableOfContents";
 import { JsonLd } from "@/components/JsonLd";
 
-// basePath สำหรับ GitHub Pages — ต้องตรงกับ next.config.ts
-const basePath = "/agent-skill-blog";
 
 // =============================================================================
 // SEO Metadata — generateMetadata function
@@ -105,7 +103,7 @@ export default function BlogPostPage() {
         {/* Header */}
         <header className="border-b border-border bg-surface/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="mx-auto max-w-4xl px-4 py-4">
-            <a href={basePath} className="text-xl font-bold text-primary">
+            <a href="/" className="text-xl font-bold text-primary">
               🚀 Antigravity Blog
             </a>
           </div>
@@ -116,8 +114,8 @@ export default function BlogPostPage() {
           {/* Breadcrumbs — ช่วยให้ Google เข้าใจโครงสร้างเว็บไซต์ */}
           <Breadcrumbs
             items={[
-              { label: "หน้าแรก", href: basePath },
-              { label: "บทความ", href: `${basePath}/blog` },
+              { label: "หน้าแรก", href: "/" },
+              { label: "บทความ", href: "/blog" },
               {
                 label: "วิธีใช้ Agent Skill ใน Antigravity",
               },
